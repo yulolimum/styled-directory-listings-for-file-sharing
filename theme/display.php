@@ -26,7 +26,9 @@
 
       <div class="content-container">
         <? if ($_GET['type'] == "image") :?>
-          <img src="<?=$_GET['src']?>?+" />
+          <a class="img-full" href="<?=$_GET['src']?>?+" target="_blank">
+            <img src="<?=$_GET['src']?>?+" />
+          </a>
 
         <? elseif ($_GET['type'] == "video") : ?>
           <script type="text/javascript" src="//cdn.sublimevideo.net/js/dtddv4tp.js"></script>

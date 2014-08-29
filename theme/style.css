@@ -277,3 +277,6 @@ tr.parent a[href^="/"] {
 .needs-pass a:hover {
   text-decoration: none;
 }
+.img-full {
+  cursor: zoom-in;
+}
