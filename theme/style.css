@@ -1,0 +1,278 @@
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,600');
+ * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  color: #BEBEBE;
+  font-weight: 400;
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 2em;
+  background: #F4F4F5;
+  margin: 0;
+  padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+  -webkit-backface-visibility: hidden;
+  padding: 100px 0px 0px;
+}
+code {
+  font-family: consolas, monospace;
+}
+a {
+  color: #61666c;
+  text-decoration: none;
+}
+a:hover {
+  color: #2a2a2a;
+}
+.wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  max-width: 95%;
+  min-height: 615px;
+}
+
+.header {
+	background: white;
+	border-bottom: 1px solid #B2B2B2;
+	padding: 0px 2.5%;
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+}
+.header .logo {
+	padding: 16px 0px;
+	float: left;
+}
+
+.header .logo img {
+	height: 25px;
+}
+.block {
+  font-size: .875em;
+  margin: 20px 0;
+  padding: 20px;
+  color: #9099A3;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .875em;
+}
+tr {
+  outline: 0;
+  border: 0;
+}
+tr:hover td {
+  background: #f6f6f6;
+}
+th {
+  text-align: left;
+  font-size: .75em;
+  padding-right: 20px;
+}
+th + th {
+  width: 65%;
+}
+th + th + th {} th + th + th + th {
+  width: 5%;
+}
+tr td:first-of-type {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+td {
+  padding: 5px 0;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #edf1f5;
+  vertical-align: middle;
+  text-align: left;
+  -webkit-transition: background 300ms ease;
+  -moz-transition: background 300ms ease;
+  -ms-transition: background 300ms ease;
+  -o-transition: background 300ms ease;
+  transition: background 300ms ease;
+}
+td a {
+  display: block;
+}
+tr.parent a[href^="/"] {
+  color: #9099A3;
+}
+.parent a[href^="/"]:hover {
+  color: #2281d0;
+}
+.footer {
+	margin-top: 50px;;
+  text-align: center;
+  font-size: .75em;
+  background: #334C5A;;
+  height: 40px;
+  width: 100%;
+  line-height: 1;
+  padding-top: 15px;
+}
+.footer a {
+  color: #BEBEBE;
+  border-bottom: 1px solid #BEBEBE;
+  line-height: 1;
+}
+.footer a:hover {
+  border-bottom: 1px solid transparent;
+}
+.content-container {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 1px solid #B2B2B2;
+  position: relative;
+  text-align: center;
+  background: white;
+}
+.content-container * {
+  max-width: 100%;
+}
+
+.content-container video{
+  width: 100%;
+}
+
+.download {
+	margin-top: 50px;;
+}
+
+.download button {
+	display: block;
+	padding: 25px 40px;
+	border: 3px solid #DF4D24;
+	line-height: 1;
+	background-color: none;
+	color: #DF4D24;
+	margin: 0 auto 0 auto;
+	font-family: "proxima-nova", sans-serif;
+	font-size: 19px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	width: 320px;
+	max-width: 100%;
+	text-align: center;
+	background: transparent;
+}
+
+.download button:hover {
+	background-color: #DF4D24;
+	color: white;
+	cursor: pointer;
+}
+.download button:focus {
+	box-shadow: none;
+	outline: none;
+}
+
+.social {
+	float: right;
+	padding: 16px 0px;
+	line-height: 1;
+}
+
+.social a {
+	display: inline-block;
+	margin:0 5px;
+	line-height: 1;
+}
+
+.social img {
+	height: 25px;
+	line-height: 1;
+}
+
+.file-name {
+	width:100%;
+	position: absolute;
+	text-align: center;
+	top: 50px;
+	left: 0;
+	color: #6D6D6D;
+	font-size: 13px;
+	line-height: 16px;
+	padding: 0 20px;
+}
+
+.file-name span{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.indexcolicon img {
+	width: 16px;
+	height: 16px;
+	opacity: 0;
+}
+.parent .indexcolicon img {
+	display: none !important;
+}
+
+#signup {
+  padding: 50px 26%;
+}
+#signup p {
+  margin-bottom: 15px;
+}
+#signup input {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: none;
+  border: 2px solid #C2BEBE;
+}
+
+#signup button {
+  display: block;
+  padding: 15px 20px;
+  border: 2px solid #DF4D24;
+  line-height: 1;
+  background-color: none;
+  color: #DF4D24;
+  margin: 0 auto 0 auto;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 19px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  background: transparent;
+}
+
+#signup button:hover {
+  background-color: #DF4D24;
+  color: white;
+  cursor: pointer;
+}
+.needs-pass {
+  display: none;
+  padding: 30px;
+  text-align: center;
+  background: #930000;
+  color: white;
+  margin-bottom: 50px;
+}
+.needs-pass a {
+  color: white;
+  text-decoration: underline;
+}
+.needs-pass a:hover {
+  text-decoration: none;
+}
