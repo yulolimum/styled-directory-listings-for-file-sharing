@@ -156,7 +156,7 @@
         url: '?setup-password',
         success: function(data){
           if (data.status != 'good') {
-            $(".needs-pass").delay(1000).slideDown(200);
+            $(".needs-pass").show();
           }
         }
     });
