@@ -24,7 +24,7 @@
 
     <div class="wrapper">
 
-      <div class="content-container">
+      <div class="content-container <?= ($_GET['type'] == "image" ? 'img' : ''?>">
         <? if ($_GET['type'] == "image") :?>
           <a class="img-full" href="<?=$_GET['src']?>?+" target="_blank">
             <img src="<?=$_GET['src']?>?+" />

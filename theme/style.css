@@ -148,6 +148,15 @@ tr.parent a[href^="/"] {
   width: 100%;
 }
 
+.content-container.img {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.content-container.img  img{
+  max-width: 100%;
+}
+
 .download {
 	margin-top: 50px;;
 }
