@@ -149,6 +149,7 @@ tr.parent a[href^="/"] {
 }
 
 .content-container.img {
+  width: auto;
   max-width: 800px;
   padding: 20px;
 }
