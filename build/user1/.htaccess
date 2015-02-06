@@ -69,13 +69,3 @@ DefaultIcon /theme/images/default.png
 HeaderName /theme/layouts/header.html
 ReadmeName /theme/layouts/footer.html
 IndexStyleSheet "/theme/stylesheets/style.css"
-AuthType Basic
-AuthName "Admin"
-AuthUserFile /Users/julianglukhenko/WebDev/web01/monosnap-directory-listing/build/theme/views/../../user1/.htpasswd
-Require valid-user
-
-<Files ?*>
-Order allow,deny
-Allow from all
-Satisfy any
-</Files>
