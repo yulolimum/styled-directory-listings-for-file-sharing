@@ -1,0 +1,1 @@
+<? die(":-]] direct access disabled [[-:") ?>
