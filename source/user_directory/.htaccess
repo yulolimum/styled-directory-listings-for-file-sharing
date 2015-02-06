@@ -1,0 +1,71 @@
+RewriteEngine on
+RewriteBase /theme/
+
+RewriteCond %{QUERY_STRING} !^\+$
+RewriteRule ^(.*)\.(7z|bz2|cab|gz|tar|aac|aif|aifc|aiff|ape|au|flac|iff|m4a|mid|mp3|mpa|ra|wav|wma|f4a|f4b|oga|ogg|xm|it|s3m|mod|bin|hex|bmp|c|xlsx|xlsm|xltx|xltm|xlam|xlr|xls|csv|cpp|css|sass|scss|deb|doc|docx|docm|dot|dotx|dotm|log|msg|odt|pages|rtf|tex|wpd|wps|svg|svgz|ai|eps|exe|h|html|xhtml|shtml|htm|URL|url|ico|jar|js|json|md|pkg|dmg|pdf|php|phtml|m3u|m3u8|pls|pls8|ps|psd|py|rar|rb|rpm|rss|bat|cmd|sh|sql|tiff|tif|txt|nfo|xml|zip)$ views/display.php?src=$1.$2&type=misc
+
+RewriteCond %{QUERY_STRING} !^\+$
+RewriteRule ^(.*)\.(jpg|png|gif)$ views/display.php?src=$1.$2&type=image
+
+RewriteCond %{QUERY_STRING} !^\+$
+RewriteRule ^(.*)\.(asf|asx|avi|flv|mkv|mov|mp4|mpg|rm|srt|swf|vob|wmv|m4v|f4v|f4p|ogv)$ views/display.php?src=$1.$2&type=video
+
+RewriteCond %{QUERY_STRING} ^setup-password$
+RewriteRule ^.*$ views/setup-password.php
+
+
+Options +Indexes
+IndexOptions +Charset=UTF-8 +FancyIndexing +IgnoreCase +FoldersFirst +XHTML +HTMLTable +SuppressRules +SuppressDescription +NameWidth=* +IconsAreLinks
+IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+IndexIgnore .htaccess /theme
+IndexIgnore .htaccess ..
+
+
+AddIcon /theme/images/blank.png ^^BLANKICON^^
+AddIcon /theme/images/folder.png ^^DIRECTORY^^
+AddIcon /theme/images/folder-home.png ..
+AddIcon /theme/images/archive.png .7z .bz2 .cab .gz .tar
+AddIcon /theme/images/audio.png .aac .aif .aifc .aiff .ape .au .flac .iff .m4a .mid .mp3 .mpa .ra .wav .wma .f4a .f4b .oga .ogg .xm .it .s3m .mod
+AddIcon /theme/images/bin.png .bin .hex
+AddIcon /theme/images/bmp.png .bmp
+AddIcon /theme/images/c.png .c
+AddIcon /theme/images/calc.png .xlsx .xlsm .xltx .xltm .xlam .xlr .xls .csv
+AddIcon /theme/images/cpp.png .cpp
+AddIcon /theme/images/css.png .css .sass .scss
+AddIcon /theme/images/deb.png .deb
+AddIcon /theme/images/doc.png .doc .docx .docm .dot .dotx .dotm .log .msg .odt .pages .rtf .tex .wpd .wps
+AddIcon /theme/images/draw.png .svg .svgz
+AddIcon /theme/images/eps.png .ai .eps
+AddIcon /theme/images/exe.png .exe
+AddIcon /theme/images/gif.png .gif
+AddIcon /theme/images/h.png .h
+AddIcon /theme/images/html.png .html .xhtml .shtml .htm .URL .url
+AddIcon /theme/images/ico.png .ico
+AddIcon /theme/images/java.png .jar
+AddIcon /theme/images/jpg.png .jpg .jpeg .jpe
+AddIcon /theme/images/js.png .js .json
+AddIcon /theme/images/markdown.png .md
+AddIcon /theme/images/package.png .pkg .dmg
+AddIcon /theme/images/pdf.png .pdf
+AddIcon /theme/images/php.png .php .phtml
+AddIcon /theme/images/playlist.png .m3u .m3u8 .pls .pls8
+AddIcon /theme/images/png.png .png
+AddIcon /theme/images/ps.png .ps
+AddIcon /theme/images/psd.png .psd
+AddIcon /theme/images/py.png .py
+AddIcon /theme/images/rar.png .rar
+AddIcon /theme/images/rb.png .rb
+AddIcon /theme/images/rpm.png .rpm
+AddIcon /theme/images/rss.png .rss
+AddIcon /theme/images/script.png .bat .cmd .sh
+AddIcon /theme/images/sql.png .sql
+AddIcon /theme/images/tiff.png .tiff .tif
+AddIcon /theme/images/text.png .txt .nfo
+AddIcon /theme/images/video.png .asf .asx .avi .flv .mkv .mov .mp4 .mpg .rm .srt .swf .vob .wmv .m4v .f4v .f4p .ogv
+AddIcon /theme/images/xml.png .xml
+AddIcon /theme/images/zip.png .zip
+DefaultIcon /theme/images/default.png
+
+HeaderName /theme/layouts/header.html
+ReadmeName /theme/layouts/footer.html
+IndexStyleSheet "/theme/stylesheets/style.css"

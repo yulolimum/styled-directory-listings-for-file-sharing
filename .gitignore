@@ -1,6 +1,1 @@
-*
-!theme/
-!theme/icons/
-!_template_dir_for_new_monosnap_directories_/
-!.gitignore
-!readme.md
+.DS_Store
