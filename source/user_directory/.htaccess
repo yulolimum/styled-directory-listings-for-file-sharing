@@ -17,6 +17,7 @@ RewriteRule ^.*$ views/setup-password.php
 Options +Indexes
 IndexOptions +Charset=UTF-8 +FancyIndexing +IgnoreCase +FoldersFirst +XHTML +HTMLTable +SuppressRules +SuppressDescription +NameWidth=* +IconsAreLinks
 IndexHeadInsert "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+IndexHeadInsert "<meta id=\"index-page\">"
 IndexIgnore .htaccess /theme
 IndexIgnore .htaccess ..
 

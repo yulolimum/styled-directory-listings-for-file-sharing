@@ -145,7 +145,7 @@
       }
     };
 
-    if ( $("table#indexlist").length ) { // only run on list page
+    if ( $("meta#index-page").length ) { // only run on list page
       document.getElementsByTagName('tr')[0].className = 'parent';
 
       $("table tr td:first-of-type() img").attr("src", "");
